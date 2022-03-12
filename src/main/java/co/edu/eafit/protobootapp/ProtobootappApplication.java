@@ -37,6 +37,7 @@ public class ProtobootappApplication {
         return String.format("El cuadrado de %f es %f", numero, this.calculadora.cuadrado(numero));
     }
     
+    //hola
     //Se ejecuta con http://localhost:8080/cubo o http://localhost:8080/cubo?numero=5
     @GetMapping("/cubo")
     public String cubo(@RequestParam(value = "numero", defaultValue = "0") Double numero) {
